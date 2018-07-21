@@ -79,7 +79,9 @@ class Main
 
 	public static void main(String[] args)
 	{
-		interpret(fileRead(args[0]));
-		System.out.println();
+		for (int i=0;i<args.length;i++) {
+			interpret(fileRead(args[i]));
+			System.out.println();
+		}
 	}
 }
