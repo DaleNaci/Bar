@@ -5,7 +5,8 @@ import java.nio.file.Paths;
 
 class Main
 {
-	private static int ptr;
+	private static int ptr; // Data Pointer
+	private static int c; // Counter for Loops
 	private static byte memory[] = new byte[65536];
 
 	private static String fileRead(String filePath) {
@@ -19,13 +20,19 @@ class Main
 		return content;
 	}
 
+	// Intepreter function with a string parameter
 	private static void interpret(String s)
 	{
-		int c = 0;
+
+		// Variable resets
+		c = 0;
 		ptr = 0;
-		String[] split = s.split("\\|");
 		memory = new byte[memory.length];
 
+		// Splitting string parameter by each instruction
+		String[] split = s.split("\\|");
+
+		// Loops through each instruction
 		for (int i=0;i<split.length;i++) {
 			switch(split[i]) {
 				case "":  memory[ptr]++; break;
