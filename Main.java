@@ -42,13 +42,13 @@ class Main
 						ptr--;
 					break;
 				case "    ":
-					//System.out.print((char)(memory[ptr]+65)); break;
-					System.out.print(memory[ptr]);break;
+					System.out.print((char)(memory[ptr])); break;
+					//System.out.print(memory[ptr]);break;
 				case "     ":
 					if (memory[ptr] == 0)
 					{
 						i++;
-						while (c > 0 || split[i].equals("      "))
+						while (c > 0 || !split[i].equals("      "))
 						{
 							if (split[i].equals("     "))
 								c++;
@@ -62,7 +62,7 @@ class Main
 					if (memory[ptr] != 0)
 					{
 						i--;
-						while (c > 0 || split[i].equals("     "))
+						while (c > 0 || !split[i].equals("     "))
 						{
 							if (split[i].equals("      "))
 								c++;
@@ -73,18 +73,13 @@ class Main
 						i--;
 					}
 					break;
-				case "       ":
-					System.out.println();
-					System.out.println("Pointer: " + ptr);
-					break;
 			}
 		}
 	}
 
 	public static void main(String[] args)
 	{
-		interpret(fileRead("code.txt"));
+		interpret(fileRead(args[0]));
 		System.out.println();
 	}
-
 }
