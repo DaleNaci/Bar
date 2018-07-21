@@ -24,6 +24,7 @@ class Main
 		int c = 0;
 		ptr = 0;
 		String[] split = s.split("\\|");
+		memory = new byte[memory.length];
 
 		for (int i=0;i<split.length;i++) {
 			switch(split[i]) {
@@ -43,7 +44,6 @@ class Main
 					break;
 				case "    ":
 					System.out.print((char)(memory[ptr])); break;
-					//System.out.print(memory[ptr]);break;
 				case "     ":
 					if (memory[ptr] == 0)
 					{
