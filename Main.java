@@ -73,6 +73,8 @@ class Main
 						i--;
 					}
 					break;
+				case "       ":
+					System.out.print(memory[ptr]); break;
 			}
 		}
 	}
