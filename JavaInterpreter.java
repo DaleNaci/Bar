@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-class Main
+class JavaInterpreter
 {
 	private static int ptr; // Data Pointer
 	private static int c; // Counter for Loops
