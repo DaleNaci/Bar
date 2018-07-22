@@ -22,4 +22,4 @@ Bar uses memory manipulation through the utilization of an array of single-byte 
 <h4>Hello World</h4>
 ```
  |     |||     |   |||  | |  ||||  ||||   |   |      | | | | |  ||      |   |   |   |   |    |   |   |   |   | |    |   |    |    |   |   ||    |   |   |   |   |    |  |  |    |  |  |  | |    |   |    ||||    |  |  |    |  | |    |   |   |   |   |   ||    |
- ```
+```
