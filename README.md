@@ -20,6 +20,9 @@ Bar uses memory manipulation through the utilization of an array of single-byte 
 <h3>Example Programs</h3>
 
 ```
-Hello World
- |     |||     |   |||  | |  ||||  ||||   |   |      | | | | |  ||<br>      |   |   |   |   |    |   |   |   |   | |    |   |    |    |   |   ||    |   |<br>   |   |   |    |  |  |    |  |  |  | |    |   |    ||||    |  |  |    |  | |    |   |   |   |   |   ||    |
+Hello, World!
+ |     |||     |   |||  | |  ||||  ||||   |   |      | | | | |  ||
+      |   |   |   |   |    |   |   |   |   | |    |   |    |    |
+   |   ||    |   |   |   |   |    |  |  |    |  |  |  | |    |   |
+    ||||    |  |  |    |  | |    |   |   |   |   |   ||    |
 ```
