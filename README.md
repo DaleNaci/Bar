@@ -20,9 +20,18 @@ Bar uses memory manipulation through the utilization of an array of single-byte 
 <h3>Example Programs</h3>
 
 ```
-Hello, World!
+Prints "Hello, World!"
  |     |||     |   |||  | |  ||||  ||||   |   |      | | | | |  ||
       |   |   |   |   |    |   |   |   |   | |    |   |    |    |
    |   ||    |   |   |   |   |    |  |  |    |  |  |  | |    |   |
     ||||    |  |  |    |  | |    |   |   |   |   |   ||    |
+```
+
+---
+
+<h2>Interpreter Usage</h2>
+Bar currently has a Java intepreter which reads a separate text file. The Java interpreter has the ability to read multiple files at once through the main function arguments. This repository has two text files, code.txt and helloworld.txt. To determine the output of each file, use this command:
+
+```
+java JavaInterpreter code.txt helloworld.txt
 ```
