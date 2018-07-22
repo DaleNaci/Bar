@@ -21,5 +21,5 @@ Bar uses memory manipulation through the utilization of an array of single-byte 
 
 ```
 Hello World
- |     |||     |   |||  | |  ||||  ||||   |   |      | | | | |  ||      |   |   |   |   |    |   |   |   |   | |    |   |    |    |   |   ||    |   |   |   |   |    |  |  |    |  |  |  | |    |   |    ||||    |  |  |    |  | |    |   |   |   |   |   ||    |
+ |     |||     |   |||  | |  ||||  ||||   |   |      | | | | |  ||<br>      |   |   |   |   |    |   |   |   |   | |    |   |    |    |   |   ||    |   |<br>   |   |   |    |  |  |    |  |  |  | |    |   |    ||||    |  |  |    |  | |    |   |   |   |   |   ||    |
 ```
