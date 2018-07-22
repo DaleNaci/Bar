@@ -1,7 +1,9 @@
 <h1>Bar</h1>
 <p><b>Bar</b> is an <a href="https://en.wikipedia.org/wiki/Esoteric_programming_language">esoteric programming language</a>, or esolang for short. This esolang was created purely as a joke, and serves as an amusing way to create extremely inefficient code. Bar consists entirely of vertical bars and spaces.</p>
 
-<h3>Basics</h3>
+---
+
+<h2>Basics</h2>
 Bar uses memory manipulation through the utilization of an array of single-byte memory blocks.
 
 ```
@@ -14,3 +16,10 @@ Bar uses memory manipulation through the utilization of an array of single-byte 
 |      | (6) = End of a loop.
 |       | (7) = Prints value stored in memory block.
 ```
+
+<h3>Example Programs</h3>
+
+<h4>Hello World</h4>
+```
+ |     |||     |   |||  | |  ||||  ||||   |   |      | | | | |  ||      |   |   |   |   |    |   |   |   |   | |    |   |    |    |   |   ||    |   |   |   |   |    |  |  |    |  |  |  | |    |   |    ||||    |  |  |    |  | |    |   |   |   |   |   ||    |
+ ```
