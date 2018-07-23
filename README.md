@@ -28,8 +28,13 @@ Prints "Hello, World!"
 ```
 
 ```
-Addition (7+5)
+Addition (7 + 5)
 |||||||  ||||||   |     | |  ||   |      |  |       |
+```
+
+```
+Multiplication(8 * 6)
+||||||||     |  |||||||   | |      |  |    |
 ```
 
 ---
