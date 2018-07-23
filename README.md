@@ -27,6 +27,11 @@ Prints "Hello, World!"
     ||||    |  |  |    |  | |    |   |   |   |   |   ||    |
 ```
 
+```
+Addition (7+5)
+|||||||  ||||||   |     | |  ||   |      |  |        |
+```
+
 ---
 
 <h2>Interpreter Usage</h2>
