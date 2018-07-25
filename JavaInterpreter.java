@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 class JavaInterpreter
 {
 	private static int ptr; // Data Pointer
-	private static int c; // Counter for Loops
+	private static int count; // Counter for Loops
 	private static byte memory[] = new byte[65536];
 
 	private static String fileRead(String filePath) {
@@ -38,16 +38,18 @@ class JavaInterpreter
 				case "":  memory[ptr]++; break;
 				case " ": memory[ptr]--; break;
 				case "  ":
-					if (ptr == memory.length - 1)
+					if (ptr == memory.length - 1) 
 						ptr = 0;
-					else
+					else {
 						ptr++;
+					}
 					break;
 				case "   ":
 					if (ptr == 0)
 						ptr = memory.length - 1;
-					else
+					else {
 						ptr--;
+					}
 					break;
 				case "    ":
 					System.out.print((char)(memory[ptr])); break;
