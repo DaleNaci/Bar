@@ -25,7 +25,7 @@ class JavaInterpreter
 	{
 
 		// Variable resets
-		c = 0;
+		count = 0;
 		ptr = 0;
 		memory = new byte[memory.length];
 
@@ -55,12 +55,12 @@ class JavaInterpreter
 					if (memory[ptr] == 0)
 					{
 						i++;
-						while (c > 0 || !split[i].equals("      "))
+						while (count > 0 || !split[i].equals("      "))
 						{
 							if (split[i].equals("     "))
-								c++;
+								count++;
 							else if (split[i].equals("      "))
-								c--;
+								count--;
 							i++;
 						}
 					}
@@ -69,12 +69,12 @@ class JavaInterpreter
 					if (memory[ptr] != 0)
 					{
 						i--;
-						while (c > 0 || !split[i].equals("     "))
+						while (count > 0 || !split[i].equals("     "))
 						{
 							if (split[i].equals("      "))
-								c++;
+								count++;
 							else if (split[i].equals("     "))
-								c--;
+								count--;
 							i--;
 						}
 						i--;

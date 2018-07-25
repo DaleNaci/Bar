@@ -1,18 +1,25 @@
 import sys
 
-def fileRead(String filePath):
-	f = open('filePath', 'r')
-	with open('filePath') as f:
+def fileRead(filePath):
+	f = open(filePath, 'r')
+	with open(filePath) as f:
 		read_data = f.read()
 	f.close()
 	return read_data
 
-def interpret(String s):
-	c = 0
+def stringSplit(s):
+	split = []
+	for c in s:
+
+
+def interpret(s):
+	count = 0
 	ptr = 0
 	memory = [0]
 
-	split = s.split("\\|")
+	#split = s.split("|")
+
+	print (split)
 
 	for i in range(0, len(split)):
 		command = split[i]
@@ -35,24 +42,23 @@ def interpret(String s):
 		if command == "     ":
 			if memory[ptr] == 0:
 				i += 1
-				while c > 0 or command != "      ":
+				while count > 0 or command != "      ":
 					if command == "     ":
-						c += 1
+						count += 1
 					elif command == "      ":
-						c -= 1
+						count -= 1
 					i += 1
-
 		if command == "      ":
 			if memory[ptr] != 0:
 				i -= 1
-				while c > 0 or command != "     ":
+				while count > 0 or command != "     ":
 					if command == "      ":
-						c += 1
+						count += 1
 					elif command == "     ":
-						c -= 1
+						count -= 1
 					i -= 1
 
-		if command == "       "
+		if command == "       ":
 			print (memory[ptr], end='')
 
 if __name__ == "__main__":
