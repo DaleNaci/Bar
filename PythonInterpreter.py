@@ -9,8 +9,13 @@ def fileRead(filePath):
 
 def stringSplit(s):
 	split = []
+	queue = ""
 	for c in s:
-
+		if c == " ":
+			queue += " "
+		elif c == "|":
+			split.append(queue)
+			queue = ""
 
 def interpret(s):
 	count = 0
