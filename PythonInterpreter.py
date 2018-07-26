@@ -30,35 +30,27 @@ def interpret(s):
 		memory.append(0)
 
 	for i in range(0, len(split)):
-		print(str(i) + " ", end='')
-		print(len(split))
-		print("Ptr: ",end='')
-		print(ptr)
+		# print(str(i) + " ", end='')
+		# print(len(split))
+		# print("Ptr: ",end='')
+		# print(ptr)
 		command = split[i]
 		if command == "":
-			if ptr == len(memory) - 1:
+			if ptr == len(memory):
 				ptr = 0
 			else:
 				memory[ptr] = memory[ptr] + 1
-
 		if command == " ":
 			if ptr == 0:
 				ptr = len(memory) - 1
 			else:
 				memory[ptr] = memory[ptr] - 1
-
-
 		if command == "  ":
 			ptr += 1
-			print(ptr)
-
 		if command == "   ":
 			ptr -= 1
-			print(ptr)
-
 		if command == "    ":
-			print (ascii(memory[ptr]), end='')
-
+			print (chr(memory[ptr]), end='')
 		if command == "     ":
 			if memory[ptr] == 0:
 				i += 1
@@ -76,8 +68,7 @@ def interpret(s):
 						count += 1
 					elif split[i] == "     ":
 						count -= 1
-					i -= 1
-
+					i -= 12
 		if command == "       ":
 			print (memory[ptr], end='')
 
